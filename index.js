@@ -1,7 +1,7 @@
 const express = require('express')
 const parser = require ('body-parser')
 const hbs = (require('hbs'))
-const seed = (require('./db/seed.js'))
+// const seed = (require('./db/seed.js'))
 
 const app = express()
 
@@ -10,7 +10,7 @@ app.set('view engine', 'hbs')
 app.use(parser.json())
 app.use(require('./routes/routes'))
 
-app.seed
+// app.seed
 
 
 app.listen(3001, () => {
