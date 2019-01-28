@@ -15,11 +15,12 @@ const Job = new Schema ({
           type: Schema.Types.ObjectId,
           ref: "Employer"
         },
-    Languages: [String],
+    Stack: [String],
     ExpMin: Number,
     ExpMax: Number,
     RemoteOpt: String,
+    Notes: String
 
 })
 
-module.exports = mongoose.Schema('Job', Job)
+module.exports = mongoose.model('Job', Job)
