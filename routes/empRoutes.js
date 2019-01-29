@@ -12,6 +12,6 @@ router.post('/', empControl.create)
 
 // router.get('/:id/edit', empControl.edit)
 
-// router.put('/:id', empControl.update)x
+// router.put('/:id', empControl.update)
 
 module.exports = router

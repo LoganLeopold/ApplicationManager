@@ -38,3 +38,8 @@ input {
       background: red;
       color: black;
   }
+
+  a {
+      background: blue;
+      color: yellow
+  }
