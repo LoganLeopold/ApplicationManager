@@ -4,10 +4,15 @@ const Job = require('../models/job')
 module.exports = {
 
     list: (req,res) => { 
-        Employer.find({}).then( emps => {
-            res.render('../views/empViews/empIndex', emps)
+        Employer.find({}).
+        populate({
+            path: "Jobs",
+        }).
+        then( emps => {
+            res.render('../views/empViews/empIndex', { emps } ) 
+            // res.send(emps)
         })
         
     },
-    
+
 }

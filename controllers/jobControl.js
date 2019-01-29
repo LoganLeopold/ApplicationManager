@@ -1,8 +1,8 @@
-module.exports = {
+// module.exports = {
 
-list: (req,res) => { 
+// list: (req,res) => { 
     
-    )
-}
+//     )
+// }
 
-}
+// }

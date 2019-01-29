@@ -1,0 +1,11 @@
+ul {
+    background: red;
+    height: 20vmin;
+    width: 20vmin;
+}
+
+li {
+    background: green;
+    height: 10vmin;
+    width: 10vmin;
+}

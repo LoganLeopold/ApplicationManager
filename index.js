@@ -1,6 +1,7 @@
 const express = require('express')
-const parser = require ('body-parser')
-const hbs = (require('hbs'))
+const parser = require('body-parser')
+// const static = require('express-static')
+const hbs = require('hbs')
 // const seed = (require('./db/seed.js'))
 
 const app = express()
@@ -9,7 +10,7 @@ app.use(parser.urlencoded({extended: true}))
 app.set('view engine', 'hbs')
 app.use(parser.json())
 app.use(require('./routes/routes'))
-
+app.use(express.static('public'))
 // app.seed
 
 
