@@ -4,9 +4,9 @@ const empControl = require('../controllers/empControl')
 
 router.get('/', empControl.list)
 
-// router.get('/new', empControl.new)
+router.get('/new', empControl.new)
 
-// router.post('/', empControl.create)
+router.post('/', empControl.create)
 
 // router.get('/:id', empControl.show)
 

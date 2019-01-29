@@ -1,0 +1,40 @@
+ul {
+    background: red;
+    width: 100%;
+    text-align: left;
+    /* align-content:  */
+    /* height: 20vmin;
+    width: 20vmin; */
+}
+
+li {
+    background: transparent;
+    /* height: 10vmin;
+    width: 10vmin; */
+}
+
+.employers {
+    list-style: none;
+    background: blue;
+}
+
+form {
+    background: green;
+}
+
+input {
+    background: red;
+    padding: 1vmin;
+    margin: 3vmin;
+    color: black;
+}
+
+::placeholder {
+    color: black;
+    font-size: 2vmin; 
+  }
+
+  button { 
+      background: red;
+      color: black;
+  }

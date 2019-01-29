@@ -15,4 +15,21 @@ module.exports = {
         
     },
 
+    new: (req,res) => {
+        res.render('../views/empViews/empNew')
+    },
+
+    create: (req,res) => {
+        console.log(req.body);
+        Employer.create({
+            Name: req.body.Name,
+            Notes: req.body.Notes,
+            AveragePay: req.body.AveragePay,
+            Website: req.body.Website,
+            Headquarters: req.body.Headquarters,
+        }).then( () => {
+            res.redirect('/employer')
+        })
+    }
+
 }

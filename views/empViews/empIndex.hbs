@@ -1,9 +1,11 @@
 {{#if emps}}
-    <ul>
+    <ul class="employers">
         {{#each emps}}
         <li>
-            <h1>{{this.Name}}</h1>
-            <p>{{this.Jobs.length}}</p>
+            <ul> {{this.Name}}
+              <li>{{this.Jobs.length}}</li>
+              <li>{{this.AveragePay}}</li>
+            </ul>
         </li>
         {{/each}}
     </ul>

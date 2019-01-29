@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 const Employer = new Schema ({
 
     Name: String,
-    Headquarters: String,
+    // Headquarters: String,
     Offices: [String],
     Jobs: [
         {
@@ -13,7 +13,8 @@ const Employer = new Schema ({
         }
       ],
     AveragePay: Number,
-    Website: String
+    Website: String,
+    Headquarters: String,
 
 })
 
