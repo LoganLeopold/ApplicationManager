@@ -1,0 +1,22 @@
+{{#if jobs}}
+    <ul class="jobs">
+        {{#each jobs}}
+        <li>
+            <ul> {{this.Title}}
+              <li>{{this.Location}}</li>
+              <li>{{this.Stack}}</li>
+              <li>{{this.ExpMin}}</li>
+              <li>{{this.Max}}</li>
+              <li>{{this.RemoteOpt}}</li>
+              <li>{{this.Notes}}</li>
+              <form action="/job/{{this.id}}/edit" method="get">
+                  <button type="submit">Edit This Job</button>            
+              </form>
+              <form action="/job/{{this.id}}/delete?_method=delete" method="post">
+                  <button type="submit">Delete This Job</button>            
+              </form>
+            </ul>
+        </li>
+        {{/each}}
+    </ul>
+{{/if}}
