@@ -5,7 +5,9 @@
             <ul> {{this.Name}}
               <li>{{this.Jobs.length}}</li>
               <li>{{this.AveragePay}}</li>
-              <a href="/employer/{{this.id}}/edit">Edit This Employer</a>
+              <form action="/employer/{{this.id}}/edit" method="get">
+                  <button type="submit">Edit This Employer</button>            
+              </form>
             </ul>
         </li>
         {{/each}}

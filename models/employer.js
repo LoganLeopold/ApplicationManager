@@ -12,6 +12,7 @@ const Employer = new Schema ({
           ref: "Job"
         }
       ],
+    Notes: [String],
     AveragePay: Number,
     Website: String,
     Headquarters: String,

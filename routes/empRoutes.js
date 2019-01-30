@@ -10,8 +10,8 @@ router.post('/', empControl.create)
 
 // router.get('/:id', empControl.show)
 
-// router.get('/:id/edit', empControl.edit)
+router.get('/:id/edit', empControl.edit)
 
-// router.put('/:id', empControl.update)
+router.put('/:id', empControl.update)
 
 module.exports = router
