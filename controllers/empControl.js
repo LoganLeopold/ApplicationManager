@@ -44,16 +44,16 @@ module.exports = {
 
     update: (req, res) => {
  
-        Employer.findOneAndUpdate({_id: req.params.id}, {
+        Employer.findOneAndUpdate({_id: req.params.id}, { $set: {
                 Name: req.body.Name,
                 Headquarters: req.body.Headquarters,
                 AveragePay: req.body.AveragePay,
-                Website: req.body.Website
+                Website: req.body.Website}
         })
         .then((emp) => {
-            console.log(req.body.id)
+            console.log(req.body.AveragePay)
+            res.redirect('/employer')
             console.log('Update successful')
-           res.redirect('/employer')
         })
     }
 
