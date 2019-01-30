@@ -34,12 +34,14 @@ module.exports = {
             //     type: Schema.Types.ObjectId,
             //     ref: "Employer"
             // },
-            Stack: [req.body.Stack],
+            // Stack: [req.body.Stack],
             ExpMin: req.body.ExpMin,
             ExpMax: req.body.ExpMax,
             RemoteOpt: req.body.RemoteOpt,
             Notes: [req.body.Notes]
 
+        }).then(() => {
+            res.redirect('/job')
         })
 
     },
