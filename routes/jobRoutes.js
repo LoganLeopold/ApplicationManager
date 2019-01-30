@@ -8,10 +8,10 @@ router.get('/new', jobControl.new)
 
 router.post('/', jobControl.create)
 
-router.get('/:id', jobControl.show)
+// router.get('/:id', jobControl.show)
 
 router.get('/:id/edit', jobControl.edit)
 
 router.put('/:id', jobControl.update)
 
-
+module.exports = router 

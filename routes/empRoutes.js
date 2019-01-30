@@ -14,4 +14,6 @@ router.get('/:id/edit', empControl.edit)
 
 router.put('/:id', empControl.update)
 
+router.delete('/:id/delete', empControl.delete)
+
 module.exports = router

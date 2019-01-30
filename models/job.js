@@ -19,7 +19,7 @@ const Job = new Schema ({
     ExpMin: Number,
     ExpMax: Number,
     RemoteOpt: String,
-    Notes: String
+    Notes: []
 
 })
 

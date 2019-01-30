@@ -48,15 +48,22 @@ module.exports = {
                 Name: req.body.Name,
                 Headquarters: req.body.Headquarters,
                 AveragePay: req.body.AveragePay,
-                Website: req.body.Website}
+                Website: req.body.Website 
+            }
         })
         .then((emp) => {
-            console.log(req.body.AveragePay)
+            console.log(req.body)
             res.redirect('/employer')
             console.log('Update successful')
         })
-    }
+    },
 
+    delete: (req, res) =>
+    Employer.findOneAndDelete({_id: req.params.id})
+    .then( then => {
+        console.log('Deletion successful');
+        res.redirect("/employer")
+    })
 }
 
 

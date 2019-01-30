@@ -8,6 +8,9 @@
               <form action="/employer/{{this.id}}/edit" method="get">
                   <button type="submit">Edit This Employer</button>            
               </form>
+              <form action="/employer/{{this.id}}/delete?_method=delete" method="post">
+                  <button type="submit">Delete This Employer</button>            
+              </form>
             </ul>
         </li>
         {{/each}}

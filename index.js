@@ -7,7 +7,9 @@ const methodOverride = require('method-override')
 
 const app = express()
 
+
 app.use(methodOverride('_method'))
+// ^After a long time of working to establish an update route Stuart reminded me about methodoverride^
 app.use(parser.urlencoded({extended: true}))
 app.set('view engine', 'hbs')
 app.use(parser.json())
