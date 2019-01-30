@@ -26,7 +26,7 @@ module.exports = {
             AveragePay: req.body.AveragePay,
             Website: req.body.Website,
             Headquarters: req.body.Headquarters,
-        }).then(() => {
+        }).then(() => { 
             res.redirect('/employer')
         })
     },

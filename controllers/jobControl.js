@@ -41,7 +41,14 @@ module.exports = {
             Notes: [req.body.Notes]
 
         }).then(() => {
-            res.redirect('/job')
+            Employer.findOneAndUpdate(
+                {Name: req.body.Company},
+                { $push: { Jobs: req.body.id} },
+                {upsert: true},
+            ).then ( emp => {
+                res.redirect('/employer')
+            });
+            
         })
 
     },
@@ -88,7 +95,7 @@ module.exports = {
 
     delete: (req, res) => {
     
-    Employer.findOneAndDelete({_id: req.params.id})
+    Job.findOneAndDelete({_id: req.params.id})
     .then( then => {
         console.log('Deletion successful');
         res.redirect("/job")

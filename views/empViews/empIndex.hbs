@@ -1,18 +1,25 @@
 {{#if emps}}
-    <ul class="employers">
-        {{#each emps}}
-        <li>
-            <ul> {{this.Name}}
-              <li>{{this.Jobs.length}}</li>
-              <li>{{this.AveragePay}}</li>
-              <form action="/employer/{{this.id}}/edit" method="get">
-                  <button type="submit">Edit This Employer</button>            
-              </form>
-              <form action="/employer/{{this.id}}/delete?_method=delete" method="post">
-                  <button type="submit">Delete This Employer</button>            
-              </form>
-            </ul>
-        </li>
-        {{/each}}
-    </ul>
+<ul class="employers">
+    {{#each emps}}
+    <li>
+        <ul> {{this.Name}}
+            <li>{{this.Jobs.length}}</li>
+            <li>{{this.AveragePay}}</li>
+            <li> 
+                <form action="/employer/{{this.id}}/edit" method="get">
+                    <button type="submit">Edit This Employer</button>
+                </form>
+            </li>
+            <li>
+                <form action="/employer/{{this.id}}/delete?_method=delete" method="post">
+                    <button type="submit">Delete This Employer</button>
+                </form>
+            </li>
+            <form action="/employer/{{this.id}}/delete?_method=delete" method="post">
+                <button type="submit">Add Job to This Employer</button>
+            </form>
+        </ul>
+    </li>
+    {{/each}}
+</ul>
 {{/if}}
