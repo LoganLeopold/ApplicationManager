@@ -1,20 +1,20 @@
 {{#if jobs}}
-    <ul class="jobs">
+    <ul class="jobList">
         {{#each jobs}}
-        <li>
-            <ul> {{this.Title}}
-              <li>{{this.Company}}</li>
-              <li>{{this.Location}}</li>
-              <li>{{this.Stack}}</li>
-              <li>{{this.ExpMin}}</li>
-              <li>{{this.Max}}</li>
-              <li>{{this.RemoteOpt}}</li>
-              <li>{{this.Notes}}</li>
-              <form action="/job/{{this.id}}/edit" method="get">
-                  <button type="submit">Edit This Job</button>            
+        <li class="job" >
+            <ul class="jobCard"> {{this.Title}}
+              <li class="Company">{{this.Company}}</li>
+              <li class="Location">{{this.Location}}</li>
+              <li class="Stack">{{this.Stack}}</li>
+              <li class="ExpMin">{{this.ExpMin}}</li>
+              <li class="ExpMqx">{{this.ExpMax}}</li>
+              <li class="RemoteOpt">{{this.RemoteOpt}}</li>
+              <li class="Notes">{{this.Notes}}</li>
+              <form class="updateF" action="/job/{{this.id}}/edit" method="get">
+                  <button class="updateB" type="submit">Edit This Job</button>            
               </form>
-              <form action="/job/{{this.id}}/delete?_method=delete" method="post">
-                  <button type="submit">Delete This Job</button>            
+              <form class="deleteF" action="/job/{{this.id}}/delete?_method=delete" method="post">
+                  <button class="updateB" type="submit">Delete This Job</button>            
               </form>
             </ul>
         </li>

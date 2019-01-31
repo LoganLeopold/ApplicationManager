@@ -1,70 +1,75 @@
-    <link rel="stylesheet" href="/css/jobNew.css"> 
+<link rel="stylesheet" href="/css/jobNew.css">
 </head>
+
 <body class="">
 
-<form action="/job" method="POST" class="container-fluid">
+    <form action="/job" method="POST" class="container-fluid">
 
-<span class="pageTitle">Job Entry</span>
+        <span class="pageTitle">Job Entry</span>
 
-<div class="row multiRow" id="">
+        <div class='createMargin'>
 
-    <div class='col-sm'>
-        <label class='row'>Title</label>
-        <input type="text" name="Title" id="titleInput" class="row">
-    </div>
+            <div class="row multiRow" id="">
 
-    <div class='col-sm'>
-        <label class='row'>Company Name</label>
-        <input type="text" name="Company" id="companyInput" class="row">
-    </div>
+                <div class='col-sm'>
+                    <label class='row'>Title</label>
+                    <input type="text" name="Title" id="titleInput" class="row">
+                </div>
 
-</div>
+                <div class='col-sm'>
+                    <label class='row'>Company Name</label>
+                    <input type="text" name="Company" id="companyInput" class="row">
+                </div>
 
-
-<div class="row multiRow" id="">
-
-    <div class="col-lg-6 col-md-6 col-sm-12">
-        <label class="row">Office Listed</label>
-        <input type="text" class="row" name="Location" id="" >
-    </div>
-   
-   <div class="col-lg-3 col-md-3 col-sm-12">
-       <label class="row">Min. Exp. Listed</label>
-        <input type="text" class="row" name="ExpMin" id="" >
-    </div>
-
-    <div class="col-lg-3 col-md-3 col-sm-12">
-        <label class="row">Max Exp. Listed</label>
-        <input type="text" class="row" name="ExpMax" id="" >
-    </div>
-    
-</div>
+            </div>
 
 
-<div class="row multiRow">
+            <div class="row multiRow" id="">
 
-    <div class="col-sm">
-        <label class="row">Add stack tech list here</label>
-        <input class="row"type="text" name="Stack" id="" >
-    </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <label class="row">Office Listed</label>
+                    <input type="text" class="row" name="Location" id="">
+                </div>
 
-    <div class="col-sm">
-        <label class="row">Remote Options: Yes/No</label>
-        <input class="row" type="text" name="RemoteOpt" id="" >
-    </div>
+                <div class="col-lg-3 col-md-3 col-sm-12">
+                    <label class="row">Min. Exp. Listed</label>
+                    <input type="text" class="row" name="ExpMin" id="">
+                </div>
 
-</div>
+                <div class="col-lg-3 col-md-3 col-sm-12">
+                    <label class="row">Max Exp. Listed</label>
+                    <input type="text" class="row" name="ExpMax" id="">
+                </div>
+
+            </div>
 
 
-<div class="row singleRow displayColumn">
-    <div class="col">
-        <label class="row">Notes</label>
-        <input class="row" type="text" name="Notes" id="Notes" class="col">
-    </div>
-</div>
+            <div class="row multiRow">
 
-<div class="row singleRow">
-<button type="submit" class="col">Add Job</button>
-</div>
+                <div class="col-sm">
+                    <label class="row">Add stack tech list here</label>
+                    <input class="row" type="text" name="Stack" id="">
+                </div>
 
-</form>
+                <div class="col-sm">
+                    <label class="row">Remote Options: Yes/No</label>
+                    <input class="row" type="text" name="RemoteOpt" id="">
+                </div>
+
+            </div>
+
+
+            <div class="row displayColumn">
+                <div class="col">
+                    <label class="row">Notes</label>
+                    <input class="row" type="text" name="Notes" id="Notes">
+                </div>
+            </div>
+
+            <div class="row singleRow">
+                <button type="submit" class="col">Add Job</button>
+            </div>
+
+        </div>
+
+    </form>

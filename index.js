@@ -15,3 +15,5 @@ app.use(express.static('public'))
 app.listen(3001, () => {
     console.log('listening on port 3001')
 })
+
+// https://coolors.co/3f7cac-95afba-bdc4a7-d5e1a3-e2f89c  Color palette reference
