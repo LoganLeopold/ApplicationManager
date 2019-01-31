@@ -1,0 +1,71 @@
+@import "../../node_modeules/bootstrap/scss/bootstrap.scss";
+
+/* * { 
+    margin: 0; 
+    padding: 0; 
+  } */
+
+html {
+    align-content: center;
+    background: blue;
+    box-sizing: border-box;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background: red;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+form {
+    background: white;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0px;
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+::placeholder {
+    color: blue;
+    text-align: center;
+}
+
+button {
+    background: red;
+    color: white;
+    padding: 0 2vmin;
+}
+
+
+input {
+    height: 3vmin;
+    padding: 0 2vmin;
+    text-align: center;
+}
+
+.singleRow {
+    background: green;
+    display: flex;
+    justify-content: center;
+    padding: 2vmin;
+    margin: 0 15vmin;
+}
+
+.multiRow {
+    background: yellow;
+    display: flex;
+    justify-content: space-around;
+    padding: 2vmin;
+    margin: 0 15vmin;
+}
+

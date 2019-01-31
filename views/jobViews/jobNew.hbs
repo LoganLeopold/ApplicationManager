@@ -1,23 +1,56 @@
-<form action="/job" method="POST">
+    <link rel="stylesheet" href="/css/jobNew.css"> 
+</head>
+<body class="">
 
-<input type="text" name="Title" id="" placeholder="Title">
+<form action="/job" method="POST" class="container-fluid">
 
-<input type="text" name="Company" id="" placeholder="Company Name">
+<span class=pageTitle>Job Entry</span>
 
-<input type="text" name="Location" id="" placeholder="Office listed">
+<div class="row singleRow" id="">
 
-<input type="text" name="Stack" id="" placeholder="Add stack tech list here">
+    <input type="text" name="Title" id="titleInput" placeholder="Title" class="col bg-black">
 
-{{!-- <input type="text" name="Offices" id=""> --}}
+</div>
 
-<input type="text" name="ExpMin" id="" placeholder="Min Exp. Listed">
 
-<input type="text" name="ExpMax" id="" placeholder="Max of Range Listed">
+<div class="row singleRow" id="companyRow">
 
-<input type="text" name="RemoteOpt" id="" placeholder="Remote Options: Yes/No">
+    <input type="text" name="Company" id="companyInput" placeholder="Company Name" class="col">
 
-<input type="text" name="Notes" id="" placeholder="Notes">
+</div>
 
-<button type="submit">Add Job</button>
+
+<div class="row multiRow" id="">
+
+    <div class="col-8">
+        <input type="text" name="Location" id="" placeholder="Office listed" >
+    </div>
+
+    <div class="col-2">
+        <input type="text" name="ExpMin" id="" placeholder="Min Exp. Listed" >
+    </div>
+
+    <div class="col-2">
+        <input type="text" name="ExpMax" id="" placeholder="Max of Range Listed" >
+    </div>
+
+</div>
+
+
+<div class="row multiRow">
+
+<input type="text" name="Stack" id="" placeholder="Add stack tech list here" class="col-9">
+
+<input type="text" name="RemoteOpt" id="" placeholder="Remote Options: Yes/No" class="col-3">
+
+</div>
+
+<div class="row singleRow">
+<input type="text" name="Notes" id="" placeholder="Notes" class="col">
+</div>
+
+<div class="row singleRow">
+<button type="submit" class="col">Add Job</button>
+</div>
 
 </form>
