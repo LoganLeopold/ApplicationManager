@@ -4,49 +4,63 @@
 
 <form action="/job" method="POST" class="container-fluid">
 
-<span class=pageTitle>Job Entry</span>
+<span class="pageTitle">Job Entry</span>
 
-<div class="row singleRow" id="">
+<div class="row multiRow" id="">
 
-    <input type="text" name="Title" id="titleInput" placeholder="Title" class="col bg-black">
+    <div class='col-sm'>
+        <label class='row'>Title</label>
+        <input type="text" name="Title" id="titleInput" class="row">
+    </div>
 
-</div>
-
-
-<div class="row singleRow" id="companyRow">
-
-    <input type="text" name="Company" id="companyInput" placeholder="Company Name" class="col">
+    <div class='col-sm'>
+        <label class='row'>Company Name</label>
+        <input type="text" name="Company" id="companyInput" class="row">
+    </div>
 
 </div>
 
 
 <div class="row multiRow" id="">
 
-    <div class="col-8">
-        <input type="text" name="Location" id="" placeholder="Office listed" >
+    <div class="col-lg-6 col-md-6 col-sm-12">
+        <label class="row">Office Listed</label>
+        <input type="text" class="row" name="Location" id="" >
+    </div>
+   
+   <div class="col-lg-3 col-md-3 col-sm-12">
+       <label class="row">Min. Exp. Listed</label>
+        <input type="text" class="row" name="ExpMin" id="" >
     </div>
 
-    <div class="col-2">
-        <input type="text" name="ExpMin" id="" placeholder="Min Exp. Listed" >
+    <div class="col-lg-3 col-md-3 col-sm-12">
+        <label class="row">Max Exp. Listed</label>
+        <input type="text" class="row" name="ExpMax" id="" >
     </div>
-
-    <div class="col-2">
-        <input type="text" name="ExpMax" id="" placeholder="Max of Range Listed" >
-    </div>
-
+    
 </div>
 
 
 <div class="row multiRow">
 
-<input type="text" name="Stack" id="" placeholder="Add stack tech list here" class="col-9">
+    <div class="col-sm">
+        <label class="row">Add stack tech list here</label>
+        <input class="row"type="text" name="Stack" id="" >
+    </div>
 
-<input type="text" name="RemoteOpt" id="" placeholder="Remote Options: Yes/No" class="col-3">
+    <div class="col-sm">
+        <label class="row">Remote Options: Yes/No</label>
+        <input class="row" type="text" name="RemoteOpt" id="" >
+    </div>
 
 </div>
 
-<div class="row singleRow">
-<input type="text" name="Notes" id="" placeholder="Notes" class="col">
+
+<div class="row singleRow displayColumn">
+    <div class="col">
+        <label class="row">Notes</label>
+        <input class="row" type="text" name="Notes" id="Notes" class="col">
+    </div>
 </div>
 
 <div class="row singleRow">
