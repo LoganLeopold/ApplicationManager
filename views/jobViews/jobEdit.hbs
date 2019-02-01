@@ -3,27 +3,29 @@
 
 <body class="">
 
+    <span>Job Update</span>
+
     <form action="/job/{{job.id}}?_method=PUT" method="POST">
 
         <div class="row">
-            <div class="col-sm-12 col-md-6 col-lg-6"><label>Title</label>
+            <div class="col-sm-12 col-md-6 col-lg-6 inputCard"><label>Title</label>
                 <input type="text" name="Title" id="" placeholder="{{job.Title}}">
             </div>
 
 
-            <div class="col-sm-12 col-md-6 col-lg-6">
+            <div class="col-sm-12 col-md-6 col-lg-6 inputCard">
                 <label>Company</label>
                 <input type="text" name="Company" id="" placeholder="{{job.Company}}">
             </div>
         </div>
 
         <div class="row">
-            <div class="col-sm-12 col-md-6 col-lg-6">
+            <div class="col-sm-12 col-md-6 col-lg-6 inputCard">
                 <label>Location</label>
                 <input type="text" name="Location" id="" placeholder="{{job.Location}}">
             </div>
 
-            <div class="col-sm-12 col-md-6 col-lg-6">
+            <div class="col-sm-12 col-md-6 col-lg-6 inputCard">
                 <label>Stack</label>
                 <input type="text" name="Stack" id="" placeholder="{{job.Stack}}">
             </div>
@@ -32,23 +34,23 @@
         {{!-- <input type="text" name="Offices" id=""> --}}
 
         <div class="row">
-            <div class="col-sm-12 col-md-4 col-lg-4">
+            <div class="col-sm-12 col-md-4 col-lg-4 inputCard">
                 <label>Minimium Experience</label>
                 <input type="text" name="ExpMin" id="" placeholder="{{job.MinExp}}">
             </div>
 
-            <div class="col-sm-12 col-md-4 col-lg-4"><label>Max Experience</label>
+            <div class="col-sm-12 col-md-4 col-lg-4 inputCard"><label>Max Experience</label>
                 <input type="text" name="ExpMax" id="" placeholder="{{job.MaxExp}}">
             </div>
 
-            <div class="col-sm-12 col-md-4 col-lg-4">
+            <div class="col-sm-12 col-md-4 col-lg-4 inputCard">
                 <label>Remote Opt? (Yes/No)</label>
                 <input type="text" name="RemoteOpt" id="" placeholder="{{job.RemoteOpt}}">
             </div>
         </div>
 
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 inputCard">
                 <label>Notes</label>
                 <input type="text" name="Notes" id="" placeholder="{{job.Notes}}">
             </div>
