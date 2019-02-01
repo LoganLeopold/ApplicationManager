@@ -13,13 +13,9 @@ app.use(parser.json())
 app.use(require('./routes/routes'))
 app.use(express.static('public'))
 
-app.set('port', process.env.PORT || 3001)
+app.set('port', process.env.PORT || 3003)
 
 app.listen(app.get('port'), () => console.log(`server is running on PORT ${app.get('port')}`));
-
-// app.listen(3001, () => {
-//     console.log('listening on port 3001')
-// })
 
 //Roger helped me realize I don't need Bootstrap local to this project's files to serve it and can use the online send but I can't leave this note in the .hbs.
 
