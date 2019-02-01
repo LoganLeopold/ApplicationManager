@@ -7,7 +7,7 @@ if (process.env.NODE_ENV == "production") {
   } else {
     mongoose.connect('mongodb://localhost/loganapplicationmanager');
   }
-
+// s
 
 
 mongoose.Promise = Promise;
