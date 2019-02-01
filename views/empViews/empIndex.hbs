@@ -1,25 +1,35 @@
+<link rel="stylesheet" href="/css/empIndex.css">
+</head>
+
+<body class="">
+
 {{#if emps}}
-<ul class="employers">
-    {{#each emps}}
-    <li>
-        <ul> {{this.Name}}
-            <li>{{this.Jobs.length}}</li>
-            <li>{{this.AveragePay}}</li>
-            <li> 
-                <form action="/employer/{{this.id}}/edit" method="get">
-                    <button type="submit">Edit This Employer</button>
-                </form>
-            </li>
-            <li>
+<ul class="employers container-fluid">
+
+<span class="pageTitle">Employers</span>
+
+    <div class='row'>
+        {{#each emps}}
+        <li class="col-sm-12 col-md-6 col-lg-4 employerCard">
+            <ul> <span class="employerTitle">{{this.Name}}</span>
+                <li>{{this.Jobs.length}}</li>
+                <li>{{this.AveragePay}}</li>
+                <li>
+                    <form action="/employer/{{this.id}}/edit" method="get">
+                        <button type="submit">Edit This Employer</button>
+                    </form>
+                </li>
+                <li>
+                    <form action="/employer/{{this.id}}/delete?_method=delete" method="post">
+                        <button type="submit">Delete This Employer</button>
+                    </form>
+                </li>
                 <form action="/employer/{{this.id}}/delete?_method=delete" method="post">
-                    <button type="submit">Delete This Employer</button>
+                    <button type="submit">Add Job to This Employer</button>
                 </form>
-            </li>
-            <form action="/employer/{{this.id}}/delete?_method=delete" method="post">
-                <button type="submit">Add Job to This Employer</button>
-            </form>
-        </ul>
-    </li>
-    {{/each}}
+            </ul>
+        </li>
+        {{/each}}
+    </div>
 </ul>
 {{/if}}

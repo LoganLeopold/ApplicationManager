@@ -1,1 +1,99 @@
-@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+html {
+    /* align-content: center; */
+    justify-content: center;
+    background: blue;
+    box-sizing: border-box;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    background: #77BA99;
+}
+
+body {
+    background: red;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background: #77BA99;
+    justify-content: center;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+.pageTitle {
+    background: #77BA99;
+    color: #262730;
+    font-size: 10vmin;
+    color: #262730;
+}
+
+.container-fluid {
+    background: #262730;
+    min-width: 100%;
+    min-height: 100%;
+    background: #262730;
+    min-width: 100%;
+    padding: 6vmin 15vmin;
+    color: #262730;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    text-rendering: auto;
+    margin: 0;
+    padding: 0;
+    font-size: 2.5vmin;
+    font-weight: bolder;
+}
+
+.employerTitle {
+    background: #D33F49;
+    font-size: 3.5vmin;
+}
+
+.employerCard {
+    margin: 2.5vmin;
+    background: #77BA99;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3);
+    border-radius: 2vmin;
+    padding: 1.5vmin;
+}
+
+/* .secLabel {
+    color: #EFF0D1;
+    font-size: 2.5vmin;
+    font-weight: bold; 
+} */
+
+button {
+    color: #262730;
+    background: #EFF0D1;
+    border-radius: 2vmin;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3);
+    margin: 1vmin 1vmin 1vmin -1vmin;
+    font-size: 2.5vmin; 
+}
+
+label {
+    padding: 1vmin 2vmin;
+}
+
+
+
+/* .block1 {
+    display: flex;
+    justify-content: space-around;
+    background: #77BA99
+} */
+
+/* .block2 {
+    display: flex;
+    justify-content: space-around;    
+    background: #77BA99
+} */
