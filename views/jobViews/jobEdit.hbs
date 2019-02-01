@@ -3,35 +3,62 @@
 
 <body class="">
 
-<form action="/job/{{job.id}}?_method=PUT" method="POST">
+    <form action="/job/{{job.id}}?_method=PUT" method="POST">
 
-<label>Title</label>
-<input type="text" name="Title" id="" placeholder="{{job.Title}}">
-
-<label>Company</label>
-<input type="text" name="Company" id="" placeholder="{{job.Company}}">
-
-<label>Location</label>
-<input type="text" name="Location" id="" placeholder="{{job.Location}}">
-
-<label>Stack</label>
-<input type="text" name="Stack" id="" placeholder="{{job.Stack}}">
-
-{{!-- <input type="text" name="Offices" id=""> --}}
-
-<label>Minimium Experience</label>
-<input type="text" name="ExpMin" id="" placeholder="{{job.MinExp}}">
-
-<label>Max Experience</label>
-<input type="text" name="ExpMax" id="" placeholder="{{job.MaxExp}}">
-
-<label>Remote Opt? (Yes/No)</label>
-<input type="text" name="RemoteOpt" id="" placeholder="{{job.RemoteOpt}}">
-
-<label>Notes</label>
-<input type="text" name="Notes" id="" placeholder="{{job.Notes}}">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-6"><label>Title</label>
+                <input type="text" name="Title" id="" placeholder="{{job.Title}}">
+            </div>
 
 
-<button type="submit">Add Job</button>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <label>Company</label>
+                <input type="text" name="Company" id="" placeholder="{{job.Company}}">
+            </div>
+        </div>
 
-</form>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <label>Location</label>
+                <input type="text" name="Location" id="" placeholder="{{job.Location}}">
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <label>Stack</label>
+                <input type="text" name="Stack" id="" placeholder="{{job.Stack}}">
+            </div>
+        </div>
+
+        {{!-- <input type="text" name="Offices" id=""> --}}
+
+        <div class="row">
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <label>Minimium Experience</label>
+                <input type="text" name="ExpMin" id="" placeholder="{{job.MinExp}}">
+            </div>
+
+            <div class="col-sm-12 col-md-4 col-lg-4"><label>Max Experience</label>
+                <input type="text" name="ExpMax" id="" placeholder="{{job.MaxExp}}">
+            </div>
+
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <label>Remote Opt? (Yes/No)</label>
+                <input type="text" name="RemoteOpt" id="" placeholder="{{job.RemoteOpt}}">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <label>Notes</label>
+                <input type="text" name="Notes" id="" placeholder="{{job.Notes}}">
+            </div>
+
+            <div class="col-12">
+                <button type="submit">Add Job</button>
+            </div>
+        </div>
+
+
+        
+
+    </form>

@@ -13,7 +13,7 @@ app.use(parser.json())
 app.use(require('./routes/routes'))
 app.use(express.static('public'))
 
-app.set('port', process.env.PORT || 3003)
+app.set('port', process.env.PORT || 3001)
 
 app.listen(app.get('port'), () => console.log(`server is running on PORT ${app.get('port')}`));
 
