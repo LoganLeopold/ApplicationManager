@@ -1,0 +1,5 @@
+{"_id":{"$oid":"5c525508563526e45f90aebf"},"Stack":["Javascript, GIT"],"Notes":["A great school that I attended!"],"Title":"Teaching Assistant","Location":"Washington","ExpMin":1,"ExpMax":3,"RemoteOpt":"Yes","__v":0,"Company":""}
+{"_id":{"$oid":"5c5357fe2e32db02cc749c95"},"Stack":[],"Notes":["An obviously super famous company with a great reputation of training and learning. "],"Title":"Junior Dev","Location":"San Francisco","ExpMin":1,"ExpMax":3,"RemoteOpt":"Yes","__v":0}
+{"_id":{"$oid":"5c5366c711346605161012f9"},"Stack":["Java Git"],"Notes":["A great school that I attended!"],"Title":"Teaching Assistant","Location":"Washington","ExpMin":1,"ExpMax":2,"RemoteOpt":"No","__v":0,"Company":""}
+{"_id":{"$oid":"5c53b1052710720619022273"},"Stack":[],"Notes":["Love this company's concept and sense of culture. "],"Title":"Junior Dev","Location":"San Fran","Company":"Fly.io","ExpMin":1,"ExpMax":2,"RemoteOpt":"Yes","__v":0}
+{"_id":{"$oid":"5c53b1322710720619022274"},"Stack":[],"Notes":["Tester"],"Title":"Tester","Location":"Tester","Company":"Tester","ExpMin":1,"ExpMax":2,"RemoteOpt":"Tester","__v":0}

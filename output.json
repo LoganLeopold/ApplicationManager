@@ -1,0 +1,4 @@
+{"_id":{"$oid":"5c5221dfab2953d7522b91f5"},"Name":"General Assembly","Jobs":[null,null,null,null,null],"__v":0,"AveragePay":25000,"Headquarters":"","Website":""}
+{"_id":{"$oid":"5c5366c7ab2953d7522c036f"},"Name":"GOogle","Jobs":[null],"__v":0}
+{"_id":{"$oid":"5c53b105ab2953d7522c2ae7"},"Name":"Fly.io","Jobs":[null],"__v":0}
+{"_id":{"$oid":"5c53b132ab2953d7522c2b07"},"Name":"Tester","Jobs":[null],"__v":0}
