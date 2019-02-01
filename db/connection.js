@@ -1,11 +1,12 @@
 const mongoose = require("mongoose");
 
-mongoose.connect("mongodb://loganleopold:Stick2it!@ds219055.mlab.com:19055/application_manager", function(error){
-    if(error) {console.log(error);}
-    else {
+// ("mongodb://loganleopold:Stick2it!@ds219055.mlab.com:19055/application_manager",
 
-        console.log("connection successful");}
-});
+if (process.env.NODE_ENV == "production") {
+    mongoose.connect(process.env.MLAB_URL)
+  } else {
+    mongoose.connect('mongodb://localhost/loganapplicationmanager');
+  }
 
 
 
