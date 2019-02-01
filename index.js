@@ -17,6 +17,8 @@ app.set('port', process.env.PORT || 3001)
 
 app.listen(app.get('port'), () => console.log(`server is running on PORT ${app.get('port')}`));
 
+
+
 //Roger helped me realize I don't need Bootstrap local to this project's files to serve it and can use the online send but I can't leave this note in the .hbs.
 
 // https://coolors.co/d33f49-d7c0d0-eff0d1-77ba99-262730  Color palette reference
