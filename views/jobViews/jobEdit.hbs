@@ -1,20 +1,36 @@
+<link rel="stylesheet" href="/css/jobEdit.css">
+</head>
+
+<body class="">
+
 <form action="/job/{{job.id}}?_method=PUT" method="POST">
 
-<input type="text" name="Title" id="" placeholder="Title">
+<label>Title</label>
+<input type="text" name="Title" id="" placeholder="{{job.Title}}">
 
-<input type="text" name="Location" id="" placeholder="Office listed">
+<label>Company</label>
+<input type="text" name="Company" id="" placeholder="{{job.Company}}">
 
-<input type="text" name="Stack" id="" placeholder="Add stack tech list here">
+<label>Location</label>
+<input type="text" name="Location" id="" placeholder="{{job.Location}}">
+
+<label>Stack</label>
+<input type="text" name="Stack" id="" placeholder="{{job.Stack}}">
 
 {{!-- <input type="text" name="Offices" id=""> --}}
 
-<input type="text" name="ExpMin" id="" placeholder="Min Exp. Listed">
+<label>Minimium Experience</label>
+<input type="text" name="ExpMin" id="" placeholder="{{job.MinExp}}">
 
-<input type="text" name="ExpMax" id="" placeholder="Max of Range Listed">
+<label>Max Experience</label>
+<input type="text" name="ExpMax" id="" placeholder="{{job.MaxExp}}">
 
-<input type="text" name="RemoteOpt" id="" placeholder="Remote Options: Yes/No">
+<label>Remote Opt? (Yes/No)</label>
+<input type="text" name="RemoteOpt" id="" placeholder="{{job.RemoteOpt}}">
 
-<input type="text" name="Notes" id="" placeholder="Notes">
+<label>Notes</label>
+<input type="text" name="Notes" id="" placeholder="{{job.Notes}}">
+
 
 <button type="submit">Add Job</button>
 

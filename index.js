@@ -16,4 +16,6 @@ app.listen(3001, () => {
     console.log('listening on port 3001')
 })
 
-// https://coolors.co/3f7cac-95afba-bdc4a7-d5e1a3-e2f89c  Color palette reference
+//Roger helped me realize I don't need Bootstrap local to this project's files to serve it and can use the online send but I can't leave this note in the .hbs.
+
+// https://coolors.co/d33f49-d7c0d0-eff0d1-77ba99-262730  Color palette reference

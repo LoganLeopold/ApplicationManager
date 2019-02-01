@@ -1,23 +1,41 @@
-{{#if jobs}}
-    <ul class="jobList">
-        {{#each jobs}}
-        <li class="job" >
-            <ul class="jobCard"> {{this.Title}}
-              <li class="Company">{{this.Company}}</li>
-              <li class="Location">{{this.Location}}</li>
-              <li class="Stack">{{this.Stack}}</li>
-              <li class="ExpMin">{{this.ExpMin}}</li>
-              <li class="ExpMqx">{{this.ExpMax}}</li>
-              <li class="RemoteOpt">{{this.RemoteOpt}}</li>
-              <li class="Notes">{{this.Notes}}</li>
-              <form class="updateF" action="/job/{{this.id}}/edit" method="get">
-                  <button class="updateB" type="submit">Edit This Job</button>            
-              </form>
-              <form class="deleteF" action="/job/{{this.id}}/delete?_method=delete" method="post">
-                  <button class="updateB" type="submit">Delete This Job</button>            
-              </form>
-            </ul>
-        </li>
-        {{/each}}
-    </ul>
-{{/if}}
+<link rel="stylesheet" href="/css/jobIndex.css">
+</head>
+
+<body class="">
+    {{#if jobs}}
+    <div class="container-fluid">
+        <ul class="jobList row">
+            {{#each jobs}}
+            <li class="job col-sm-12 col-md-6 col-lg-4">
+                <ul class="jobCard row">
+                    <div class="col-12 jobTitle">{{this.Title}}</div>
+                    <div class="col-12">
+                        <div class="row block1">
+                            <li class="Company col-sm-12 col-med-4 col-lg-4"><span class="secLabel">Company:</span> {{this.Company}}</li>
+                            <li class="Location col-sm-12 col-med-4 col-lg-4"><span class="secLabel">Location:</span> {{this.Location}}</li>
+                            <li class="Stack col-sm-12 col-med-4 col-lg-4"><span class="secLabel">Tech:</span> {{this.Stack}}</li>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="row block2">
+                            <li class="ExpMin col-sm-12 col-med-4 col-lg-4"><span class="secLabel">Experience Min:</span> {{this.ExpMin}}</li>
+                            <li class="ExpMqx col-sm-12 col-med-4 col-lg-4"><span class="secLabel">Experience Max:</span> {{this.ExpMax}}</li>
+                            <li class="RemoteOpt col-sm-12 col-med-4 col-lg-4"><span class="secLabel">Remote option?</span> {{this.RemoteOpt}}</li>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="notesLabel">Notes: </label>
+                        <li class="liNotes col-12">{{this.Notes}}</li>
+                    </div>
+                    <form class="updateF col-12" action="/job/{{this.id}}/edit" method="get">
+                        <button class="updateB" type="submit">Edit This Job</button>
+                    </form>
+                    <form class="deleteF col-12" action="/job/{{this.id}}/delete?_method=delete" method="post">
+                        <button class="updateB" type="submit">Delete This Job</button>
+                    </form>
+                </ul>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+    {{/if}}

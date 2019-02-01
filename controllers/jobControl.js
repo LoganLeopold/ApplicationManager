@@ -24,11 +24,12 @@ module.exports = {
 
             Title: req.body.Title,
             Location: req.body.Location,
-            // //trying to populate the pay with Employer's avg pay
+            
             // Pay: {
             //     type: Schema.Types.ObjectId,
             //     ref: "Employer"
             // },
+            Company: req.body.Company,
             // Company:
             // {
             //     type: Schema.Types.ObjectId,
@@ -40,7 +41,7 @@ module.exports = {
             RemoteOpt: req.body.RemoteOpt,
             Notes: [req.body.Notes]
 
-        }).then(() => {
+        }).then((job) => {
             Employer.findOneAndUpdate(
                 {Name: req.body.Company},
                 { $push: { Jobs: req.body.id} },
@@ -73,6 +74,7 @@ module.exports = {
             //     type: Schema.Types.ObjectId,
             //     ref: "Employer"
             // },
+            Company: req.body.Company,
             // Company:
             // {
             //     type: Schema.Types.ObjectId,

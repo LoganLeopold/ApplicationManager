@@ -1,6 +1,6 @@
 html {
     align-content: center;
-    background: blue;
+    background: #262730;
     box-sizing: border-box;
     margin: 0px;
     height: 100%;
@@ -8,58 +8,83 @@ html {
 }
 
 body {
-    background: red;
+    background: #262730;
     margin: 0px;
     height: 100%;
     width: 100%;
 }
 
-form {
-    background: #3F7CAC;
+.pageTitle {
+    margin: 5vmin 20vmin 0 20vmin;
+    font-size: 8vmin;
+    border-radius: 2vmin;
+    color: #77BA99;
+    background: #EFF0D1;
+    font-family: 'Oswald', serif;
+    font-weight: bold;
+}
+
+.container-fluid {
     justify-content: center;
+}
+
+form {
+    background: #262730;
+    align-content: center;
+    align-items: center;
     text-align: center;
     min-height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center; 
     margin: 0 20vmin;   
 }
 
 .createMargin {
-    margin: 7vmin 20vmin 5vmin 20vmin;
+    margin: 0vmin 15vmin 0vmin 15vmin;
+    padding: 0vmin;
+    align-content: center;
+    justify-content: center;
 }
-
 
 span {
     margin: 7vmin 0 5vmin 0;
     box-sizing: content-box;
-    /* padding: 3vmin 0 5vmin 0; */
-    color: blue;
+    padding: 2vmin 10vmin;
+    color: #D33F49;
 }
 button {
-    background: "";
-    color: black;
-    margin: 1vmin;
+    background: #77BA99;
+    color: #EFF0D1;
+    margin: 1vmin 0 10vmin 0;
     padding: 0 2vmin;
-    margin-bottom: 10vmin;
+    border-radius: 1vmin;
+    font-size: 4vmin;
+    font-family: 'Oswald', sans-serif;
+}
+
+label {
+    color: #EFF0D1;
+    font-family: 'Oswald', sans-serif;
+    font-size: 3vmin;
+    text-align: center;
 }
 
 input {
-    background: #3F7CAC;
+    background: #77BA99;
     height: 5vmin;
     padding: 0 2vmin;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
     text-align: center;
 }
 
 .singleRow {
     background: transparent;
     display: flex;
-    justify-content: center;
-    padding: 2vmin;
+    
+    padding: 2vmin 35vmin;
     margin: 0 15vmin;
-    align-items: center;
-
 }
 
 .multiRow {
@@ -73,15 +98,19 @@ input {
 .displayColumn {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    /* justify-content: center; */
     align-items: center;
+    align-content: center;
     padding: 2vmin;
     margin: 0 15vmin;
-    
 }
 
 #Notes {
-    min-height: 30vmin;
+    min-height: 20vmin;
     width: 50%;
 }
 
+div {
+    justify-content: center;
+    align-items: center;
+}

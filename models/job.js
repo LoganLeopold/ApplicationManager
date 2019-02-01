@@ -10,11 +10,12 @@ const Job = new Schema ({
         type: Schema.Types.ObjectId,
         ref: "Employer"
     },
-    Company:
-        {
-          type: Schema.Types.ObjectId,
-          ref: "Employer"
-        },
+    // Company:
+    //     {
+    //       type: Schema.Types.ObjectId,
+    //       ref: "Employer"
+    //     },
+    Company: String,
     Stack: [String],
     ExpMin: Number,
     ExpMax: Number,
